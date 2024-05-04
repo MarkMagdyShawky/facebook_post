@@ -1,3 +1,6 @@
+// ignore_for_file: prefer_const_constructors
+
+import 'package:facebook_post/Screens/facebookPost.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatefulWidget {
@@ -12,6 +15,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      home: FacebookPostPage(),
     );
   }
 }
