@@ -1,7 +1,6 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:like_button/like_button.dart';
 // ignore_for_file: prefer_const_constructors
 
@@ -173,7 +172,7 @@ class FacebookPostPage extends StatelessWidget {
                   ),
                   // Like , comment , share
                   Padding(
-                    padding: const EdgeInsets.only(left: 20 ,right: 20 ,top: 10,bottom: 10),
+                    padding: const EdgeInsets.only(left: 20, right: 20, top: 10, bottom: 10),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -181,21 +180,34 @@ class FacebookPostPage extends StatelessWidget {
                         Row(
                           children: [
                             LikeButton(),
-                            Text(" Like" , style: TextStyle(color: Color(0xffb0b3b8)),),
+                            Text(
+                              " Like",
+                              style: TextStyle(color: Color(0xffb0b3b8)),
+                            ),
                           ],
                         ),
                         //comment
                         Row(
                           children: [
-                           Image(image: AssetImage("assets/images/comment.png") , width: 26 , height: 26,),
-                            Text(" Comment" , style: TextStyle(color: Color(0xffb0b3b8)),),
+                            Image(
+                              image: AssetImage("assets/images/comment.png"),
+                              width: 26,
+                              height: 26,
+                            ),
+                            Text(
+                              " Comment",
+                              style: TextStyle(color: Color(0xffb0b3b8)),
+                            ),
                           ],
                         ),
                         //share
                         Row(
                           children: [
-                            Icon(Icons.send_rounded,color: Color(0xffb0b3b8)),
-                            Text(" Share" , style: TextStyle(color: Color(0xffb0b3b8)),),
+                            Icon(Icons.send_rounded, color: Color(0xffb0b3b8)),
+                            Text(
+                              " Share",
+                              style: TextStyle(color: Color(0xffb0b3b8)),
+                            ),
                           ],
                         ),
                       ],
